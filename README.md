@@ -1,6 +1,6 @@
 # Berkeley
 
-Implementação do algoritmo de Berkeley para a matéria Sistemas Distribuídos na FURB.
+Implementação do algoritmo de Berkeley, Client-Server Architecture (Java RMI), para a matéria Sistemas Distribuídos na FURB.
 
 Autores
 > [Eduardo Z. Feller](https://github.com/eduardofz12) <br>
