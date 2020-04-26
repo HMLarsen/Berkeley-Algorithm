@@ -57,20 +57,11 @@ public class MainBerkeley {
 	 */
 	private static ServerTime createMachineServer(int machineNumber) throws Exception {
 		String serverName = AppConstants.SERVER_NAME;
-		int serverPort;
-		switch (machineNumber) {
-			case 1:
-				serverPort = AppConstants.SERVER_PORT_1;
-				break;
-			case 2:
-				serverPort = AppConstants.SERVER_PORT_2;
-				break;
-			case 3:
-				serverPort = AppConstants.SERVER_PORT_3;
-				break;
-			default:
-				serverPort = -1;
-				break;
+		int serverPort = switch (machineNumber) {
+			case 1 -> AppConstants.SERVER_PORT_1;
+			case 2 -> AppConstants.SERVER_PORT_2;
+			case 3 -> AppConstants.SERVER_PORT_3;
+			default -> -1;
 		};
 		Registry machineRegistry = LocateRegistry.getRegistry(serverName, serverPort);
 		ServerTime machineServerTime = (ServerTime) machineRegistry.lookup(ServerTimeImpl.class.getSimpleName());
