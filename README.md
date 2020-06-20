@@ -1,19 +1,19 @@
-# Berkeley
+# Berkeley-Algorithm
 
-Implementação do algoritmo de Berkeley, usando Client-Server Architecture (Java RMI), para a matéria Sistemas Distribuídos na FURB.
+Berkeley algorithm implementation, using Client-Server Architecture (Java RMI), for Distributed Systems class at FURB.
 
-Autores
+Authors
 > [Eduardo Z. Feller](https://github.com/eduardofz12) <br>
 > [Hugo Marcel Larsen](https://github.com/HMLarsen) <br>
 > [Lucas Vanderlinde](https://github.com/LucasVander) <br>
 
-### Execução
+### Execution
 
 ```
 maven clean install
 ```
 
-Iniciar os servidores de cada uma das três máquinas com seus horários locais.
+Start the servers on each of the three machines with their local time.
 
 ```
 java --enable-preview -cp target/t3-berkeley-1.0.0.jar server.machine.Machine1
@@ -21,7 +21,7 @@ java --enable-preview -cp target/t3-berkeley-1.0.0.jar server.machine.Machine2
 java --enable-preview -cp target/t3-berkeley-1.0.0.jar server.machine.Machine3
 ```
 
-Executar a classe principal do algoritmo e verificar a mudança nos horários das três máquinas.
+Run the main class of the algorithm and check the change in the local time of the three machines.
 
 ```
 java --enable-preview -jar target/t3-berkeley-1.0.0.jar
